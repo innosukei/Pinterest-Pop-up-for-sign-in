@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop-up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="signin_card">
-        <div class="top"></div>
+        <div class="top_si_card">
+            <img src="./img/Pinterest.svg" alt="" width="60px">
+            <div class="si_card_header">
+                <div class="top_part_header">Welcome to Pinterest</div>
+                <div class="bottom_part_header">Find new ideas to try</div>
+            </div>
+        </div>
         <div class="forms">
-<form action="">
-    <label for="">Email</label><br>
-    <input type="email"><br>
-    <label for="">Password</label><br>
-    <input type="text" value="create a password"><br>
-    <label for="birthdate">Birthdate:</label><br>
-    <input type="date" id="birthdate" name="birthdate">
-</form>
+            <form action="">
+                <label for="">Email</label><br>
+                <input class="input_text" id="email-field" type="email" placeholder="Email"><br>
+                <br>
+                <label for="">Password</label><br>
+                <input id="password-field"
+                    type="password" class="form-control input_text" name="password" placeholder="Create a password">
+                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                <br>
+                <label for="birthdate">Birthdate:</label><br>
+                <input class="input_text" type="date" id="birthdate" name="birthdate">
+            </form>
         </div>
         <div class="buttons">
-            <div class="continue"></div>
-            <div class="continue_w_google"></div>
+            <div class="continue">
+                <button>Continue</button>
+            </div>
+            OR
+            <div class="continue_w_google">
+                <button><img src="./img/devicon_google.svg" alt="">Continue with Google</button>
+            </div>
         </div>
-        <div class="policy"></div>
-        <div class="bottom"></div>
+        <div class="policy">
+            <div class="agreement">
+                By continuing, you agree to Pinterest's 
+                Terms of Service and acknowledge you've read our Privacy Policy
+                Notice at collection
+            </div>
+            <div class="login">
+                Already a member? Log in
+            </div>
+        </div>
+        <div class="bottom_si_card">
+            Create a free business account
+        </div>
     </div>
+    <script src="./script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </body>
+
 </html>
