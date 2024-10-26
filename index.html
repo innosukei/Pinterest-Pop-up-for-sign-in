@@ -30,8 +30,8 @@
                 <input class="input_text" id="email-field" type="email" placeholder="Email"><br>
                 <br>
                 <label for="">Password</label><br>
-                <input id="password-field"
-                    type="password" class="form-control input_text" name="password" placeholder="Create a password">
+                <input id="password-field" type="password" class="form-control input_text" name="password"
+                    placeholder="Create a password" id="password-field">
                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                 <br>
                 <label for="birthdate">Birthdate:</label><br>
@@ -40,8 +40,8 @@
         </div>
         <div class="buttons">
             <div class="continue">
-                <button>Continue</button>
-            </div>
+                <button onclick="myFunction()">Continue</button>
+            </div>  
             OR
             <div class="continue_w_google">
                 <button><img src="./img/devicon_google.svg" alt="">Continue with Google</button>
@@ -61,6 +61,19 @@
             Create a free business account
         </div>
     </div>
+
+    <div class="form_results">
+        <div class="form-result-text">
+            Your Data
+        </div>
+        <div id="display-data" class="data-gathered">
+            Email: <span id="email-display"></span> <br>
+            Password: <span id="password-display"></span> <br>
+            Birthdate: <span id="birthdate-display"></span>
+        </div>
+    </div>
+
+    <!-- form submission -->
     <script src="./script.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </body>
